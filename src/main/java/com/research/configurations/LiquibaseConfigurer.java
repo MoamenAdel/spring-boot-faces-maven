@@ -22,13 +22,14 @@ public class LiquibaseConfigurer {
 	private Environment env;
 	
 	public LiquibaseConfigurer() {
+		System.out.println(System.getProperty("java.class.path") + "//////////////////////////////////////////////////////////");
 		System.out.println("liquibaseReady");
 	}
 	
 	@Bean
 	public SpringLiquibase liquibase() throws PropertyVetoException {
 	    SpringLiquibase liquibase = new SpringLiquibase();
-	    liquibase.setChangeLog(env.getProperty("database.liquibase.configuration"));
+	    liquibase.setChangeLog("classpath:liquibase-changelog.xml");
 	    liquibase.setDataSource(dataSource());
 	    liquibase.setDefaultSchema("research_center");
 	    return liquibase;

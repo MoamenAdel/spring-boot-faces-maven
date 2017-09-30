@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package JSFBackingBeans;
+package com.research.JSFBackingBeans;
 
-import JSFBackingBeans.exceptions.NonexistentEntityException;
+import com.research.JSFBackingBeans.exceptions.NonexistentEntityException;
 import com.research.dto.LFMDto;
 import com.research.entity.Lfm;
 import java.io.Serializable;
@@ -37,9 +37,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author Moamenovic
  */
 @Scope(value = "session")
-@Component(value = "lfmController")
-@ELBeanName(value = "lfmController")
-@RequestMapping("/lfm")
+@Component(value = "LfmJpaController")
+@ELBeanName(value = "LfmJpaController")
+//@RequestMapping("/lfm")
 public class LfmJpaController implements Serializable {
 
 	@Autowired

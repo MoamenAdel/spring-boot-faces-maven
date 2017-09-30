@@ -22,7 +22,7 @@ import com.research.service.ProjectService;
 
 @RestController
 @CrossOrigin("${angular.url}")
-@RequestMapping("/project")
+@RequestMapping("/project/faces")
 public class ProjectController {
 @Autowired
 ProjectService projectService;

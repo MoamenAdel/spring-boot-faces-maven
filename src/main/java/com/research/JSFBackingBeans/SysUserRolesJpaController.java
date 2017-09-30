@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package JSFBackingBeans;
+package com.research.JSFBackingBeans;
 
-import JSFBackingBeans.exceptions.NonexistentEntityException;
 import java.io.Serializable;
 import javax.persistence.Query;
 import javax.persistence.EntityNotFoundException;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+
+import com.research.JSFBackingBeans.exceptions.NonexistentEntityException;
 import com.research.entity.Role;
 import com.research.entity.SysUser;
 import com.research.entity.SysUserRoles;

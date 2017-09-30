@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package JSFBackingBeans;
+package com.research.JSFBackingBeans;
 
-import JSFBackingBeans.exceptions.NonexistentEntityException;
+import com.research.JSFBackingBeans.exceptions.NonexistentEntityException;
 import com.research.entity.Docs;
 import java.io.Serializable;
 import javax.persistence.Query;

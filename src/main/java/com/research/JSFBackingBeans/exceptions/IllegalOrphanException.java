@@ -1,4 +1,4 @@
-package JSFBackingBeans.exceptions;
+package com.research.JSFBackingBeans.exceptions;
 
 import java.util.ArrayList;
 import java.util.List;

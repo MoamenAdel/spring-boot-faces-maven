@@ -1,4 +1,4 @@
-package JSFBackingBeans.exceptions;
+package com.research.JSFBackingBeans.exceptions;
 
 public class PreexistingEntityException extends Exception {
     public PreexistingEntityException(String message, Throwable cause) {

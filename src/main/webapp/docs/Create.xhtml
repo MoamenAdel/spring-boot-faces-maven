@@ -21,7 +21,7 @@
                     <h:inputText id="isUploaded" value="#{docsController.selected.isUploaded}" title="#{bundle.CreateDocsTitle_isUploaded}" />
                     <h:outputLabel value="#{bundle.CreateDocsLabel_projectId}" for="projectId" />
                     <h:selectOneMenu id="projectId" value="#{docsController.selected.projectId}" title="#{bundle.CreateDocsTitle_projectId}" >
-                        <f:selectItems value="#{projectController.itemsAvailableSelectOne}"/>
+                        <f:selectItems value="#{ProjectJpaController.itemsAvailableSelectOne}"/>
                     </h:selectOneMenu>
                     <h:outputLabel value="#{bundle.CreateDocsLabel_id}" for="id" />
                     <h:inputText id="id" value="#{docsController.selected.id}" title="#{bundle.CreateDocsTitle_id}" />
